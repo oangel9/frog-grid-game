@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ce07hky24oxda"]
+
+[ext_resource type="Texture2D" uid="uid://cbrqgpgwtujq" path="res://assets/leaf-tile.png" id="1_wmchb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r3pj"]
+atlas = ExtResource("1_wmchb")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6846"]
+atlas = ExtResource("1_wmchb")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2xad"]
+atlas = ExtResource("1_wmchb")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5d7w"]
+atlas = ExtResource("1_wmchb")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nx2nx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r3pj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6846")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2xad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5d7w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="Leaf" type="Sprite2D" unique_id=1072348057]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=512175587]
+sprite_frames = SubResource("SpriteFrames_nx2nx")
+frame_progress = 0.8160197

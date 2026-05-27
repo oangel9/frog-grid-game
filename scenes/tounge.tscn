@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dk13pqsko6egu"]
+
+[ext_resource type="Texture2D" uid="uid://bbcbhcpp65aqp" path="res://assets/player/lengua.png" id="1_xh44j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otaqi"]
+atlas = ExtResource("1_xh44j")
+region = Rect2(0, 0, 18, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvx8p"]
+atlas = ExtResource("1_xh44j")
+region = Rect2(18, 0, 18, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsiae"]
+atlas = ExtResource("1_xh44j")
+region = Rect2(36, 0, 18, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipq2c"]
+atlas = ExtResource("1_xh44j")
+region = Rect2(54, 0, 18, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ory6"]
+atlas = ExtResource("1_xh44j")
+region = Rect2(72, 0, 18, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcfp2"]
+atlas = ExtResource("1_xh44j")
+region = Rect2(90, 0, 18, 3)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yp033"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otaqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvx8p")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_nsiae")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_ipq2c")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_5ory6")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_lcfp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otaqi")
+}],
+"loop": false,
+"name": &"tounge",
+"speed": 8.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_xh44j"]
+resource_name = "tounge"
+script/source = "extends AnimatedSprite2D
+"
+
+[node name="Tounge" type="AnimatedSprite2D" unique_id=662383099]
+sprite_frames = SubResource("SpriteFrames_yp033")
+animation = &"tounge"
+script = SubResource("GDScript_xh44j")

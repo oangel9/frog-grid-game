@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://r7ub3wp0dv6y"]
+
+[ext_resource type="Texture2D" uid="uid://niiqpwp7r64g" path="res://assets/player/Sapo.png" id="1_mqod6"]
+[ext_resource type="Script" uid="uid://bho4litra7arc" path="res://scripts/frog.gd" id="1_qyo2l"]
+[ext_resource type="PackedScene" uid="uid://dk13pqsko6egu" path="res://scenes/tounge.tscn" id="3_rq8tc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mqod6"]
+radius = 6.0
+
+[node name="Frog" type="CharacterBody2D" unique_id=1173982828]
+script = ExtResource("1_qyo2l")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1812093065]
+texture = ExtResource("1_mqod6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=441496194]
+shape = SubResource("CircleShape2D_mqod6")
+
+[node name="AnimatedSprite2D" parent="." unique_id=662383099 instance=ExtResource("3_rq8tc")]
+position = Vector2(0, -16)
+rotation = -1.5707964
+frame = 6
+frame_progress = 1.0

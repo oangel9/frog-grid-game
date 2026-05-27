@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ce5cvkah8ilty"]
+
+[ext_resource type="PackedScene" uid="uid://c3lp7asn8htf2" path="res://scenes/playground.tscn" id="1_040y0"]
+[ext_resource type="PackedScene" uid="uid://r7ub3wp0dv6y" path="res://scenes/frog.tscn" id="2_3upoe"]
+
+[node name="Practice" type="Node2D" unique_id=1034532219]
+
+[node name="Playground" parent="." unique_id=163282926 instance=ExtResource("1_040y0")]
+
+[node name="StaticBody2D" parent="." unique_id=1730973139 instance=ExtResource("2_3upoe")]
+position = Vector2(152, 72)

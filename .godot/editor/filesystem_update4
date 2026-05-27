@@ -1,0 +1,6 @@
+res://scenes/board_manager.tscn
+res://scripts/frog.gd
+res://scenes/frog.tscn
+res://scripts/board_manager.gd
+res://scripts/log.gd
+res://scenes/log.tscn

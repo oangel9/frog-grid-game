@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b665paqevm211"]
+
+[ext_resource type="Script" uid="uid://334as43py1d5" path="res://scripts/log.gd" id="1_pt1ea"]
+[ext_resource type="Texture2D" uid="uid://bx6hqw6v7k4mf" path="res://assets/wood.png" id="1_spugk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pt1ea"]
+atlas = ExtResource("1_spugk")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0uux"]
+atlas = ExtResource("1_spugk")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vx63x"]
+atlas = ExtResource("1_spugk")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5036"]
+atlas = ExtResource("1_spugk")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dnvgf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pt1ea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0uux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vx63x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5036")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="Log" type="Node2D" unique_id=120661014]
+script = ExtResource("1_pt1ea")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1401464098]
+sprite_frames = SubResource("SpriteFrames_dnvgf")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.98938394
