@@ -21,3 +21,18 @@ script = ExtResource("4_4gr8l")
 
 [node name="Log" parent="Logs" unique_id=120661014 instance=ExtResource("5_x8nfd")]
 position = Vector2(136, 72)
+
+[node name="Log2" parent="Logs" unique_id=831541875 instance=ExtResource("5_x8nfd")]
+position = Vector2(264, 136)
+
+[node name="Log3" parent="Logs" unique_id=2080413694 instance=ExtResource("5_x8nfd")]
+position = Vector2(168, 104)
+
+[node name="Log4" parent="Logs" unique_id=1806477957 instance=ExtResource("5_x8nfd")]
+position = Vector2(136, 136)
+
+[node name="Log5" parent="Logs" unique_id=2116274187 instance=ExtResource("5_x8nfd")]
+position = Vector2(200, 72)
+
+[node name="Log6" parent="Logs" unique_id=1238876298 instance=ExtResource("5_x8nfd")]
+position = Vector2(168, 72)

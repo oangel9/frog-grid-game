@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://uqxqmnrgiyw1"]
+
+[ext_resource type="Script" uid="uid://cp8vde4aykmgm" path="res://scripts/broken_log.gd" id="1_my2lx"]
+
+[node name="BrokenLog" type="Node2D" unique_id=1417059165]
+script = ExtResource("1_my2lx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=372621175]

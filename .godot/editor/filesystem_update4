@@ -3,3 +3,5 @@ res://scripts/board_manager.gd
 res://scripts/log.gd
 res://scenes/frog.tscn
 res://scripts/frog.gd
+res://scripts/broken_log.gd
+res://scenes/broken_log.tscn
