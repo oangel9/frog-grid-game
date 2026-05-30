@@ -73,4 +73,6 @@ func move_to_grid():
 	position = Vector2(grid_pos) * TILE_SIZE + HALF_TILE
 
 func on_enter_water():
+	if board.is_platform_tile_occupied(grid_pos):
+		return
 	queue_free()

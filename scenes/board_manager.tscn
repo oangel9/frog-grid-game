@@ -12,6 +12,7 @@ script = ExtResource("1_x868o")
 [node name="LevelCreator" parent="." unique_id=935334794 instance=ExtResource("4_x8nfd")]
 
 [node name="Frog" parent="." unique_id=1173982828 instance=ExtResource("2_2p3ay")]
+top_level = true
 
 [node name="GridGuide" type="Node2D" parent="." unique_id=2120255679]
 script = ExtResource("4_4gr8l")
@@ -20,9 +21,3 @@ script = ExtResource("4_4gr8l")
 
 [node name="Log" parent="Logs" unique_id=120661014 instance=ExtResource("5_x8nfd")]
 position = Vector2(136, 72)
-
-[node name="Log2" parent="Logs" unique_id=1886889301 instance=ExtResource("5_x8nfd")]
-position = Vector2(168, 136)
-
-[node name="Log3" parent="Logs" unique_id=174561566 instance=ExtResource("5_x8nfd")]
-position = Vector2(232, 72)

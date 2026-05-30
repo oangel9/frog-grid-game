@@ -6,19 +6,25 @@ const TILE_SIZE := 16
 @onready var water_layer = $LevelCreator/Water
 
 var occupied_tiles: Dictionary = {}
+var platform_tiles: Dictionary = {}
 
 
 func register_entity(entity, grid_pos: Vector2i) -> void:
 	occupied_tiles[grid_pos] = entity
 
-
+func register_platform_on_water(entity, grid_pos: Vector2i) -> void:
+	platform_tiles[grid_pos] = entity
+	
+	
 func unregister_entity(grid_pos: Vector2i) -> void:
 	occupied_tiles.erase(grid_pos)
-
+	
 
 func is_tile_occupied(grid_pos: Vector2i) -> bool:
 	return occupied_tiles.has(grid_pos)
 
+func is_platform_tile_occupied(grid_pos: Vector2i) -> bool:
+	return platform_tiles.has(grid_pos)
 
 func get_entity_at(grid_pos: Vector2i):
 	return occupied_tiles.get(grid_pos, null)
@@ -28,13 +34,7 @@ func move_entity(entity, new_pos: Vector2i) -> bool:
 
 	# Something already there?
 	if is_tile_occupied(new_pos):
-
-		var occupying_entity = get_entity_at(new_pos)
-
-		# Platforms are walkable
-		if not occupying_entity.is_platform:
-			return false
-
+		return false
 	# Remove old position
 	occupied_tiles.erase(entity.grid_pos)
 
