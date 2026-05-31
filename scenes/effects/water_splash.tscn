@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://chmspjfcvgt7e"]
+
+[ext_resource type="Script" uid="uid://blik846y70kp4" path="res://scripts/water_splash.gd" id="1_sf8kh"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rq8tc"]
+lifetime_randomness = 0.41
+particle_flag_rotate_y = true
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 30.0
+initial_velocity_max = 80.0
+gravity = Vector3(0.865, 9, 0)
+scale_min = 0.5
+scale_max = 1.87
+color = Color(0.0058601117, 0.2033745, 0.8863953, 1)
+
+[node name="WaterSplash" type="Node2D" unique_id=540908501]
+script = ExtResource("1_sf8kh")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1557510406]
+emitting = false
+amount = 20
+lifetime = 0.87
+one_shot = true
+explosiveness = 0.13
+randomness = 0.2
+process_material = SubResource("ParticleProcessMaterial_rq8tc")

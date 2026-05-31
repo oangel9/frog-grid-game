@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bk48mtus1wu82" path="res://scenes/level_creator.tscn" id="4_x8nfd"]
 [ext_resource type="PackedScene" uid="uid://b665paqevm211" path="res://scenes/log.tscn" id="5_x8nfd"]
 [ext_resource type="PackedScene" uid="uid://uqxqmnrgiyw1" path="res://scenes/broken_log.tscn" id="6_ygbyq"]
+[ext_resource type="PackedScene" uid="uid://drt3b13gqbd3t" path="res://scenes/death_panel.tscn" id="7_nno0t"]
 
 [node name="BoardManager" type="Node2D" unique_id=1767844690]
 script = ExtResource("1_x868o")
@@ -38,6 +39,12 @@ position = Vector2(200, 72)
 [node name="Log6" parent="Logs" unique_id=1238876298 instance=ExtResource("5_x8nfd")]
 position = Vector2(168, 72)
 
+[node name="Log8" parent="Logs" unique_id=842452554 instance=ExtResource("5_x8nfd")]
+position = Vector2(232, 72)
+
+[node name="Log7" parent="Logs" unique_id=1543417925 instance=ExtResource("5_x8nfd")]
+position = Vector2(264, 72)
+
 [node name="BrokenLog" parent="Logs" unique_id=1417059165 instance=ExtResource("6_ygbyq")]
 position = Vector2(152, 104)
 
@@ -49,3 +56,15 @@ position = Vector2(248, 120)
 
 [node name="BrokenLog4" parent="Logs" unique_id=2112101918 instance=ExtResource("6_ygbyq")]
 position = Vector2(232, 88)
+
+[node name="BrokenLog5" parent="Logs" unique_id=846540530 instance=ExtResource("6_ygbyq")]
+position = Vector2(264, 88)
+
+[node name="BrokenLog6" parent="Logs" unique_id=872446179 instance=ExtResource("6_ygbyq")]
+position = Vector2(280, 72)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1880377469]
+
+[node name="DeathPanel" parent="CanvasLayer" unique_id=1711384787 instance=ExtResource("7_nno0t")]
+offset_left = -1.0
+offset_right = -1.0

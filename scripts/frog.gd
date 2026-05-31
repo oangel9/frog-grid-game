@@ -2,9 +2,10 @@ extends CharacterBody2D
 
 const TILE_SIZE := 16
 const HALF_TILE := Vector2(TILE_SIZE / 2, TILE_SIZE / 2)
-
+const WATER_SPLASH = preload("res://scenes/effects/water_splash.tscn")
 @onready var board = get_parent()
 @onready var anim = $AnimatedSprite2D
+@onready var sprite = $Sprite2D
 
 var grid_pos: Vector2i = Vector2i(6, 4)
 
@@ -75,4 +76,24 @@ func move_to_grid():
 func on_enter_water():
 	if board.is_platform_tile_occupied(grid_pos):
 		return
+	spawn_splash()
+	await land_on_water_animation()
+	
+	await get_tree().create_timer(1.6).timeout
 	queue_free()
+	board.on_death()
+
+# ANIMATIONS
+
+func land_on_water_animation():
+	var tween = create_tween()
+	#await get_tree().create_timer(0.2).timeout
+	tween.tween_property(self, "rotation_degrees", rotation_degrees + 720, 0.6)
+	tween.parallel().tween_property(self, "scale", Vector2.ZERO, 0.6)
+	print("fam what happened")
+	await tween.finished
+
+func spawn_splash():
+	var splash = WATER_SPLASH.instantiate()
+	splash.global_position = global_position
+	get_parent().add_child(splash)

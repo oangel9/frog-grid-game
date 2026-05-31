@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://drt3b13gqbd3t"]
+
+[ext_resource type="Script" uid="uid://bhlkrxj64v8iv" path="res://scripts/ui/death_ui_manager.gd" id="1_qmlx8"]
+
+[node name="DeathPanel" type="Panel" unique_id=1711384787]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qmlx8")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=224856412]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -30.5
+offset_right = 24.5
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=409273198]
+modulate = Color(0, 1, 0, 1)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1237204929]
+layout_mode = 2
+theme_override_font_sizes/font_size = 4
+text = "Oh no! 
+You sank into the Swamp"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=599882799]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Restart"
+
+[node name="MenuButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1709724187]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Menu"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]

@@ -7,9 +7,13 @@ var water_layer
 var occupied_tiles: Dictionary = {}
 var platform_tiles: Dictionary = {}
 
+@onready var death_panel = $CanvasLayer/DeathPanel
+
 func _ready(): 
 	water_layer = $LevelCreator/Water
+	death_panel.visible = false
 	call_deferred("check_starting_entities")
+
 
 func register_entity(entity, grid_pos: Vector2i) -> void:
 	occupied_tiles[grid_pos] = entity
@@ -135,3 +139,7 @@ func check_on_broken_log(frog_old_pos: Vector2i):
 	if platform is BrokenLog:
 		platform.deduct_point()
 		# if it is, break log
+		
+func on_death():
+	get_tree().paused = true
+	death_panel.visible = true

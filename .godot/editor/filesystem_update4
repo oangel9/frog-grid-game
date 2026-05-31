@@ -6,3 +6,7 @@ res://scripts/frog.gd
 res://scripts/broken_log.gd
 res://scenes/broken_log.tscn
 res://scenes/level_creator.tscn
+res://scenes/death_panel.tscn
+res://scripts/ui/death_ui_manager.gd
+res://scenes/effects/water_splash.tscn
+res://scripts/water_splash.gd
