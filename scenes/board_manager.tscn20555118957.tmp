@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://1u1go3a1nvsw" path="res://scripts/grid_debug.gd" id="4_4gr8l"]
 [ext_resource type="PackedScene" uid="uid://bk48mtus1wu82" path="res://scenes/level_creator.tscn" id="4_x8nfd"]
 [ext_resource type="PackedScene" uid="uid://b665paqevm211" path="res://scenes/log.tscn" id="5_x8nfd"]
-[ext_resource type="PackedScene" uid="uid://uqxqmnrgiyw1" path="res://scenes/broken_log.tscn" id="6_ygbyq"]
 
 [node name="BoardManager" type="Node2D" unique_id=1767844690]
 script = ExtResource("1_x868o")
@@ -37,15 +36,3 @@ position = Vector2(200, 72)
 
 [node name="Log6" parent="Logs" unique_id=1238876298 instance=ExtResource("5_x8nfd")]
 position = Vector2(168, 72)
-
-[node name="BrokenLog" parent="Logs" unique_id=1417059165 instance=ExtResource("6_ygbyq")]
-position = Vector2(152, 104)
-
-[node name="BrokenLog2" parent="Logs" unique_id=490614873 instance=ExtResource("6_ygbyq")]
-position = Vector2(184, 120)
-
-[node name="BrokenLog3" parent="Logs" unique_id=914761609 instance=ExtResource("6_ygbyq")]
-position = Vector2(248, 120)
-
-[node name="BrokenLog4" parent="Logs" unique_id=2112101918 instance=ExtResource("6_ygbyq")]
-position = Vector2(232, 88)

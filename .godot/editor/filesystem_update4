@@ -5,3 +5,4 @@ res://scenes/frog.tscn
 res://scripts/frog.gd
 res://scripts/broken_log.gd
 res://scenes/broken_log.tscn
+res://scenes/level_creator.tscn

@@ -1,7 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
 ::res://::1780163556
 icon.svg::CompressedTexture2D::2227652286164577999::1779643537::1779643541::1::::<><><>0<>0<>6faf92090b96012fb3755096dc13ef3c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1780163556
+::res://assets/::1780186539
+arrow-pointer.png::CompressedTexture2D::7427774881510953056::1780186539::1780186540::1::::<><><>0<>0<>fcd8e9145c84a9276e523d02efd761c5<>res://.godot/imported/arrow-pointer.png-b567a7f1b0971f5db6085da8033ea1de.ctex::
 broken-log.png::CompressedTexture2D::513918076748326657::1780163546::1780163556::1::::<><><>0<>0<>f528460a283e873e519f9ec135d957a6<>res://.godot/imported/broken-log.png-0f360fca61a4a9d853626bd1631c39c4.ctex::
 fence.png::CompressedTexture2D::2996607865457017356::1779649517::1779649517::1::::<><><>0<>0<>b77b409f268107726380831cd724884b<>res://.godot/imported/fence.png-9d8de4d7918de1bd42f23f664d99ae7a.ctex::
 froggy_tileset (1).png::CompressedTexture2D::1925549077053860643::1779651346::1779651346::1::::<><><>0<>0<>178a14cf0417d11614ea358c03f8e9b6<>res://.godot/imported/froggy_tileset (1).png-1052352940515cfd694b7b867ee86c25.ctex::
@@ -11,18 +12,20 @@ wood.png::CompressedTexture2D::4065214593795516225::1779821888::1779821888::1:::
 ::res://assets/player/::1780163556
 lengua.png::CompressedTexture2D::2460811629332257711::1779663024::1779663024::1::::<><><>0<>0<>d7e9b117c083d02c8c224351dbe4062b<>res://.godot/imported/lengua.png-fea54b209ae2586524b03e76383a3e65.ctex::
 Sapo.png::CompressedTexture2D::929485120532457668::1779663024::1779663024::1::::<><><>0<>0<>b1123666d3da9cae1e0ed3c10d2b2409<>res://.godot/imported/Sapo.png-14f0444757ab047e7ee9f45ce640416d.ctex::
-::res://scenes/::1780162499
-board_manager.tscn::PackedScene::6347770517651374179::1780162499::0::1::::<><><>0<>0<><>::uid://dujwmh54hxlgi::::res://scripts/board_manager.gd<>uid://r7ub3wp0dv6y::::res://scenes/frog.tscn<>uid://1u1go3a1nvsw::::res://scripts/grid_debug.gd<>uid://bk48mtus1wu82::::res://scenes/level_creator.tscn<>uid://b665paqevm211::::res://scenes/log.tscn
+::res://scenes/::1780186120
+board_manager.tscn::PackedScene::6347770517651374179::1780186120::0::1::::<><><>0<>0<><>::uid://dujwmh54hxlgi::::res://scripts/board_manager.gd<>uid://r7ub3wp0dv6y::::res://scenes/frog.tscn<>uid://1u1go3a1nvsw::::res://scripts/grid_debug.gd<>uid://bk48mtus1wu82::::res://scenes/level_creator.tscn<>uid://b665paqevm211::::res://scenes/log.tscn<>uid://uqxqmnrgiyw1::::res://scenes/broken_log.tscn
 frog.tscn::PackedScene::1260488060980281746::1780161638::0::1::::<><><>0<>0<><>::uid://niiqpwp7r64g::::res://assets/player/Sapo.png<>uid://bho4litra7arc::::res://scripts/frog.gd<>uid://dk13pqsko6egu::::res://scenes/tounge.tscn
 leaf.tscn::PackedScene::5107162193690581730::1779644516::0::1::::<><><>0<>0<><>::uid://cbrqgpgwtujq::::res://assets/leaf-tile.png
-level_creator.tscn::PackedScene::3150202194922522845::1779824066::0::1::::<><><>0<>0<><>::uid://cbrqgpgwtujq::::res://assets/leaf-tile.png<>uid://dwpvlpu4pisvl::::res://assets/tileset.png
+level_creator.tscn::PackedScene::3150202194922522845::1780180929::0::1::::<><><>0<>0<><>::uid://cbrqgpgwtujq::::res://assets/leaf-tile.png<>uid://dwpvlpu4pisvl::::res://assets/tileset.png
 log.tscn::PackedScene::4628118868466704554::1779921754::0::1::::<><><>0<>0<><>::uid://334as43py1d5::::res://scripts/log.gd<>uid://bx6hqw6v7k4mf::::res://assets/wood.png
 playground.tscn::PackedScene::6761805073283756409::1779813274::0::1::::<><><>0<>0<><>::uid://cbrqgpgwtujq::::res://assets/leaf-tile.png<>uid://dwpvlpu4pisvl::::res://assets/tileset.png
 practice.tscn::PackedScene::5115687535813636986::1779663526::0::1::::<><><>0<>0<><>::uid://c3lp7asn8htf2::::res://scenes/playground.tscn<>uid://r7ub3wp0dv6y::::res://scenes/frog.tscn
+broken_log.tscn::PackedScene::1438232631505133414::1780179581::0::1::::<><><>0<>0<><>::uid://cp8vde4aykmgm::::res://scripts/broken_log.gd<>uid://hk7fj6i5ucyj::::res://assets/broken-log.png
 tounge.tscn::PackedScene::7916552040425583624::1779824558::0::1::::<><><>0<>0<><>::uid://bbcbhcpp65aqp::::res://assets/player/lengua.png
-::res://scripts/::1780162298
-board_manager.gd::GDScript::8582975942329691848::1780162298::0::1::::<>Node2D<><>0<>0<><>::
+::res://scripts/::1780186120
+board_manager.gd::GDScript::8582975942329691848::1780185999::0::1::::<>Node2D<><>0<>0<><>::
 frog.gd::GDScript::2908424764551091492::1780162298::0::1::::<>CharacterBody2D<><>0<>0<><>::
 grid_debug.gd::GDScript::1867787624862101206::1779683389::0::1::::<>Node2D<><>0<>0<><>::
-log.gd::GDScript::2024851983281648988::1780162298::0::1::::PushableLog<>Node2D<><>0<>0<><>::
+log.gd::GDScript::2024851983281648988::1780184828::0::1::::PushableLog<>Node2D<><>0<>0<><>::
+broken_log.gd::GDScript::5895079156995678744::1780186120::0::1::::BrokenLog<>Node2D<><>0<>0<><>::
 tounge.gd::GDScript::3573593147309086211::1779722542::0::1::::<>AnimatedSprite2D<><>0<>0<><>::

@@ -29,9 +29,5 @@ func move_to_grid():
 
 func on_enter_water():
 	is_platform = true
-	can_be_moved = false
 	board.unregister_entity(grid_pos)
-	board.register_platform_on_water(self, grid_pos)
-	print("Deleted log from occupied_tiles:", board.occupied_tiles)
-	print("Newly added platform on water:", board.platform_tiles)
-	print("log became platform")
+	board.register_platform_on_water(self, grid_pos)																																									
