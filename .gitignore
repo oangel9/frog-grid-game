@@ -1,0 +1,12 @@
+# Godot 4
+.godot/
+
+# Import cache
+.import/
+
+# Mono (ignore if not using C#)
+.mono/
+
+# OS files
+.DS_Store
+Thumbs.db
