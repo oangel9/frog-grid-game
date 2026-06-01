@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chmspjfcvgt7e"]
 
-[ext_resource type="Script" uid="uid://blik846y70kp4" path="res://scripts/water_splash.gd" id="1_sf8kh"]
+[ext_resource type="Script" path="res://scripts/water_splash.gd" id="1_sf8kh"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rq8tc"]
 lifetime_randomness = 0.41

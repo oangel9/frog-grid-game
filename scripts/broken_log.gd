@@ -10,6 +10,7 @@ var grid_pos: Vector2i
 
 var is_platform := true
 var can_be_moved := false
+var can_be_eaten := false
 var breaking_point := 1
 
 func _ready():

@@ -64,18 +64,6 @@ position = Vector2(264, 88)
 [node name="BrokenLog6" parent="Logs" unique_id=872446179 instance=ExtResource("6_ygbyq")]
 position = Vector2(280, 72)
 
-[node name="BrokenLog7" parent="Logs" unique_id=1358217742 instance=ExtResource("6_ygbyq")]
-position = Vector2(296, 88)
-
-[node name="BrokenLog8" parent="Logs" unique_id=666816743 instance=ExtResource("6_ygbyq")]
-position = Vector2(296, 120)
-
-[node name="BrokenLog9" parent="Logs" unique_id=557974663 instance=ExtResource("6_ygbyq")]
-position = Vector2(296, 152)
-
-[node name="BrokenLog10" parent="Logs" unique_id=1227246924 instance=ExtResource("6_ygbyq")]
-position = Vector2(248, 152)
-
 [node name="Mosquitos" type="Node2D" parent="." unique_id=1073250266]
 
 [node name="Mosquito" parent="Mosquitos" unique_id=1230791995 instance=ExtResource("7_c4u65")]

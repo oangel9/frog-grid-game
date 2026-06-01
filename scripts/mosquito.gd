@@ -1,4 +1,4 @@
-class_name PushableLog
+class_name Mosquito
 extends Node2D
 
 const TILE_SIZE := 16
@@ -10,7 +10,8 @@ var grid_pos: Vector2i
 
 var is_platform := false
 var can_be_moved := true
-var can_be_eaten := false
+var can_be_eaten := true
+
 
 func _ready():
 	grid_pos = Vector2i(
@@ -28,6 +29,5 @@ func move_to_grid():
 
 
 func on_enter_water():
-	is_platform = true
 	board.unregister_entity(grid_pos)
 	board.register_platform_on_water(self, grid_pos)																																									

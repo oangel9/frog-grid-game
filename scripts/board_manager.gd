@@ -92,13 +92,19 @@ func try_pull(entity, direction: Vector2i) -> bool:
 	var target_pos: Vector2i = entity.grid_pos + direction * 2
 
 	var object = get_entity_at(target_pos)
-
+	
 	if object == null:
 		return false
+		
+			
+	if object.can_be_eaten == true:
+		eat_object(object)
+		return false
+	
 
 	if object.can_be_moved == false:
 		return false
-
+	
 	var object_new_pos: Vector2i = object.grid_pos - direction
 
 	return move_entity(object, object_new_pos)
@@ -143,3 +149,8 @@ func check_on_broken_log(frog_old_pos: Vector2i):
 func on_death():
 	get_tree().paused = true
 	death_panel.visible = true
+	
+func eat_object(object):
+	unregister_entity(object.grid_pos)
+	object.queue_free()
+	

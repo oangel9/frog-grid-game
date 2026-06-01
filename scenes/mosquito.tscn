@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cpe3a34rtdy8c"]
+
+[ext_resource type="Texture2D" uid="uid://c7jsgaj8o1glu" path="res://assets/mosquito-anim.png" id="1_hdjtb"]
+[ext_resource type="Script" uid="uid://b8nf7dwad8xxx" path="res://scripts/mosquito.gd" id="1_u7nif"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7nif"]
+atlas = ExtResource("1_hdjtb")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fycp"]
+atlas = ExtResource("1_hdjtb")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jn24c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7nif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fycp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Mosquito" type="Node2D" unique_id=1230791995]
+script = ExtResource("1_u7nif")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=313920285]
+sprite_frames = SubResource("SpriteFrames_jn24c")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.7002655
