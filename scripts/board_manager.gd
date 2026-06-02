@@ -6,14 +6,19 @@ const TILE_SIZE := 16
 var water_layer
 var occupied_tiles: Dictionary = {}
 var platform_tiles: Dictionary = {}
+var mosquito_count := 0 
+
 
 @onready var death_panel = $CanvasLayer/DeathPanel
+@onready var score_ui = $CanvasLayer/ScorePanel
+@onready var mosquitos = $Mosquitos
 
 func _ready(): 
 	water_layer = $LevelCreator/Water
 	death_panel.visible = false
+	mosquito_count = mosquitos.get_child_count()
+	score_ui.set_score(mosquito_count)
 	call_deferred("check_starting_entities")
-
 
 func register_entity(entity, grid_pos: Vector2i) -> void:
 	occupied_tiles[grid_pos] = entity
@@ -26,7 +31,6 @@ func unregister_entity(grid_pos: Vector2i) -> void:
 	
 func unregister_platform_on_water_entity(grid_pos: Vector2i) -> void:
 	platform_tiles.erase(grid_pos)
-		
 		
 func is_tile_occupied(grid_pos: Vector2i) -> bool:
 	return occupied_tiles.has(grid_pos)
@@ -99,7 +103,8 @@ func try_pull(entity, direction: Vector2i) -> bool:
 			
 	if object.can_be_eaten == true:
 		eat_object(object)
-		return false
+		#score_ui.set_score(get_mosquitos_count())
+		return true
 	
 
 	if object.can_be_moved == false:
@@ -153,4 +158,16 @@ func on_death():
 func eat_object(object):
 	unregister_entity(object.grid_pos)
 	object.queue_free()
+	mosquito_count -= 1
+	score_ui.set_score(mosquito_count)
+	print("there are: " ,get_mosquitos_count())
+	if mosquito_count == 0:
+		win_condition()
+		
+func get_mosquitos_count() -> int:
+	print(mosquitos)
+	return len(mosquitos.get_children())
 	
+	
+func win_condition() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

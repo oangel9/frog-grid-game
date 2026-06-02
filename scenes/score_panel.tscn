@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bh6kr5psjtltg"]
+
+[ext_resource type="Script" uid="uid://508x1djn606c" path="res://scripts/ui/score_panel.gd" id="1_lwh8y"]
+
+[node name="ScorePanel" type="Panel" unique_id=1351284015]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+script = ExtResource("1_lwh8y")
+
+[node name="Label" type="Label" parent="." unique_id=1675358644]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Mosquitos X "

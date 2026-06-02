@@ -2,12 +2,13 @@
 
 [ext_resource type="Script" uid="uid://dujwmh54hxlgi" path="res://scripts/board_manager.gd" id="1_x868o"]
 [ext_resource type="PackedScene" uid="uid://r7ub3wp0dv6y" path="res://scenes/frog.tscn" id="2_2p3ay"]
-[ext_resource type="Script" uid="uid://1u1go3a1nvsw" path="res://scripts/grid_debug.gd" id="4_4gr8l"]
+[ext_resource type="Script" uid="uid://1u1go3a1nvsw" path="res://scripts/ui/grid_debug.gd" id="4_4gr8l"]
 [ext_resource type="PackedScene" uid="uid://bk48mtus1wu82" path="res://scenes/level_creator.tscn" id="4_x8nfd"]
 [ext_resource type="PackedScene" uid="uid://b665paqevm211" path="res://scenes/log.tscn" id="5_x8nfd"]
 [ext_resource type="PackedScene" uid="uid://uqxqmnrgiyw1" path="res://scenes/broken_log.tscn" id="6_ygbyq"]
 [ext_resource type="PackedScene" uid="uid://cpe3a34rtdy8c" path="res://scenes/mosquito.tscn" id="7_c4u65"]
-[ext_resource type="PackedScene" uid="uid://c5itlcpvc628d" path="res://scenes/death_panel.tscn" id="7_nno0t"]
+[ext_resource type="PackedScene" uid="uid://drt3b13gqbd3t" path="res://scenes/death_panel.tscn" id="7_nno0t"]
+[ext_resource type="PackedScene" uid="uid://bh6kr5psjtltg" path="res://scenes/score_panel.tscn" id="9_r5qo6"]
 
 [node name="BoardManager" type="Node2D" unique_id=1767844690]
 script = ExtResource("1_x868o")
@@ -85,8 +86,9 @@ position = Vector2(216, 152)
 position = Vector2(248, 40)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1880377469]
-visible = false
 
 [node name="DeathPanel" parent="CanvasLayer" unique_id=1711384787 instance=ExtResource("7_nno0t")]
 offset_left = -1.0
 offset_right = -1.0
+
+[node name="ScorePanel" parent="CanvasLayer" unique_id=1351284015 instance=ExtResource("9_r5qo6")]
