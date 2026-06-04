@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd3cmql8thbxg"
-path="res://.godot/imported/arrow-pointer.png-b567a7f1b0971f5db6085da8033ea1de.ctex"
+path="res://.godot/imported/arrow-pointer.png-37524fe26382c2a0310fece88291264c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/arrow-pointer.png"
-dest_files=["res://.godot/imported/arrow-pointer.png-b567a7f1b0971f5db6085da8033ea1de.ctex"]
+source_file="res://assets/ui/arrow-pointer.png"
+dest_files=["res://.godot/imported/arrow-pointer.png-37524fe26382c2a0310fece88291264c.ctex"]
 
 [params]
 

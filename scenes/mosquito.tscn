@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpe3a34rtdy8c"]
 
-[ext_resource type="Texture2D" uid="uid://c7jsgaj8o1glu" path="res://assets/mosquito-anim.png" id="1_hdjtb"]
+[ext_resource type="Texture2D" uid="uid://c7jsgaj8o1glu" path="res://assets/tiles/mosquito-anim.png" id="1_hdjtb"]
 [ext_resource type="Script" uid="uid://b8nf7dwad8xxx" path="res://scripts/mosquito.gd" id="1_u7nif"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u7nif"]

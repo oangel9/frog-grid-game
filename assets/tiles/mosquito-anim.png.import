@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2o0rn3ty5ef0"
-path="res://.godot/imported/froggy_tileset (1).png-1052352940515cfd694b7b867ee86c25.ctex"
+uid="uid://c7jsgaj8o1glu"
+path="res://.godot/imported/mosquito-anim.png-394973ee3c5d247fff98835db52c33fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/froggy_tileset (1).png"
-dest_files=["res://.godot/imported/froggy_tileset (1).png-1052352940515cfd694b7b867ee86c25.ctex"]
+source_file="res://assets/tiles/mosquito-anim.png"
+dest_files=["res://.godot/imported/mosquito-anim.png-394973ee3c5d247fff98835db52c33fc.ctex"]
 
 [params]
 
