@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://334as43py1d5" path="res://scripts/log.gd" id="1_pt1ea"]
 [ext_resource type="Texture2D" uid="uid://bx6hqw6v7k4mf" path="res://assets/wood.png" id="1_spugk"]
+[ext_resource type="AudioStream" uid="uid://du2l7137vsadu" path="res://assets/sounds/water-splash-2.mp3" id="3_k0uux"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pt1ea"]
 atlas = ExtResource("1_spugk")
@@ -47,3 +48,8 @@ sprite_frames = SubResource("SpriteFrames_dnvgf")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.98938394
+
+[node name="WaterSplashAudio" type="AudioStreamPlayer2D" parent="." unique_id=1591327534]
+visible = false
+stream = ExtResource("3_k0uux")
+pitch_scale = 0.5

@@ -30,4 +30,5 @@ func move_to_grid():
 func on_enter_water():
 	is_platform = true
 	board.unregister_entity(grid_pos)
-	board.register_platform_on_water(self, grid_pos)																																									
+	board.register_platform_on_water(self, grid_pos)			
+	$WaterSplashAudio.play()																																					

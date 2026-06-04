@@ -44,3 +44,5 @@ func deduct_point():
 	if breaking_point <= 0:
 		board.unregister_platform_on_water_entity(grid_pos)
 		queue_free()
+		print("Go on...")
+		$LogBreaksAudio.play()

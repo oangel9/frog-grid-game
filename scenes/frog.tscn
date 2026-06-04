@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://niiqpwp7r64g" path="res://assets/player/Sapo.png" id="1_mqod6"]
 [ext_resource type="Script" uid="uid://bho4litra7arc" path="res://scripts/frog.gd" id="1_qyo2l"]
 [ext_resource type="PackedScene" uid="uid://dk13pqsko6egu" path="res://scenes/tounge.tscn" id="3_rq8tc"]
+[ext_resource type="AudioStream" uid="uid://c2xvdt0sa6bo2" path="res://assets/sounds/button-pressed.mp3" id="4_1g2vb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mqod6"]
 radius = 6.0
@@ -21,3 +22,6 @@ position = Vector2(0, -16)
 rotation = -1.5707964
 frame = 6
 frame_progress = 1.0
+
+[node name="FakeFrogEatAudio" type="AudioStreamPlayer2D" parent="." unique_id=382851257]
+stream = ExtResource("4_1g2vb")
