@@ -149,7 +149,7 @@ func check_on_broken_log(frog_old_pos: Vector2i):
 	
 	if platform is BrokenLog:
 		platform.deduct_point()
-		# if it is, break log
+		platform.spawn_splash()
 		
 func on_death():
 	get_tree().paused = true

@@ -3,6 +3,7 @@ extends Node2D
 
 const TILE_SIZE := 16
 const HALF_TILE := Vector2(TILE_SIZE / 2, TILE_SIZE / 2)
+const WATER_SPLASH = preload("res://scenes/effects/water_splash.tscn")
 
 @onready var board = get_parent().get_parent()
 
@@ -18,17 +19,11 @@ func _ready():
 		floor(position.x / TILE_SIZE),
 		floor(position.y / TILE_SIZE)
 	)
-
 	move_to_grid()
 	board.register_entity(self, grid_pos)
 
-
 func move_to_grid():
 	position = Vector2(grid_pos) * TILE_SIZE + HALF_TILE
-
-		#board.on_enter_water()
-	#else:
-		#board.register_entity(self, grid_pos)
 
 func on_start_water():
 	is_platform = true
@@ -44,3 +39,9 @@ func deduct_point():
 	if breaking_point <= 0:
 		board.unregister_platform_on_water_entity(grid_pos)
 		queue_free()
+		
+		
+func spawn_splash():
+	var splash = WATER_SPLASH.instantiate()
+	splash.global_position = global_position
+	get_parent().add_child(splash)
