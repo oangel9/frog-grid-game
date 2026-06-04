@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://cp8vde4aykmgm" path="res://scripts/broken_log.gd" id="1_my2lx"]
 [ext_resource type="Texture2D" uid="uid://hk7fj6i5ucyj" path="res://assets/broken-log.png" id="2_bwtak"]
+[ext_resource type="AudioStream" uid="uid://cigv8r118arbm" path="res://assets/sounds/log-breaks.mp3" id="3_ron3v"]
 
 [node name="BrokenLog" type="Node2D" unique_id=1417059165]
 script = ExtResource("1_my2lx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=372621175]
 texture = ExtResource("2_bwtak")
+
+[node name="LogBreaksAudio" type="AudioStreamPlayer2D" parent="." unique_id=382970942]
+stream = ExtResource("3_ron3v")

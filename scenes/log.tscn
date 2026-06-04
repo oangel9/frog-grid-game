@@ -47,3 +47,8 @@ sprite_frames = SubResource("SpriteFrames_dnvgf")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.98938394
+
+[node name="WaterSplashAudio" type="AudioStreamPlayer2D" parent="." unique_id=1591327534]
+visible = false
+stream = ExtResource("3_k0uux")
+pitch_scale = 0.5

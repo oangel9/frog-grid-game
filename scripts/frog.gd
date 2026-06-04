@@ -26,9 +26,12 @@ func _unhandled_input(event):
 
 	if Input.is_action_pressed("pull"):
 		board.try_pull(self, facing_direction)
+		$FakeFrogEatAudio.play()
+		play_tongue()
 	elif Input.is_action_pressed("push"):
 		board.try_push(self, facing_direction)
-
+		$FakeFrogEatAudio.play()
+		play_tongue()
 	if event.is_action_pressed("ui_accept"):
 		play_tongue()
 		return
